@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.centro{
+    margin-left: 520px;
+    margin-top: 180px;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100px;
+    gap: 15px;
+}
+
+
+input {border: 0px;
+    border-bottom: solid 1px }
+    input:focus { border: solid 1px limegreen;
+    outline: none
+    }
+    
+    input:hover { border: solid 1px red}
+
