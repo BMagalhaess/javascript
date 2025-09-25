@@ -210,7 +210,14 @@ function mascara_cod()
             {
                 if(cod_formatado[5]!=undefined)
                 {
-                    document.getElementById("cod").value=cod_formatado.slice(0,5)+"//" + cod_formatado[5]
+                    document.getElementById("cod").value=cod_formatado.slice(0,5)+"/" + cod_formatado[5]
+                }
+            }
+            if (cod_formatado[6]!="/")
+            {
+                if(cod_formatado[6]!=undefined)
+                {
+                    document.getElementById("cod").value=cod_formatado.slice(0,6)+"/" + cod_formatado[6]
                 }
             }
 
@@ -226,8 +233,25 @@ function mascara_cod()
             {
                 if(cod_formatado[14]!=undefined)
                 {
-                    document.getElementById("cod").value=cod_formatado.slice(0,14)+".9." + cod_formatado[14]
+                    document.getElementById("cod").value=cod_formatado.slice(0,14)+"." + cod_formatado[14]
+                }
+            }
+
+            if (cod_formatado[15]!="9")
+            {
+                if(cod_formatado[15]!=undefined)
+                {
+                    document.getElementById("cod").value=cod_formatado.slice(0,15)+"9" + cod_formatado[15]
+                }
+            }
+
+            if (cod_formatado[16]!=".")
+            {
+                if(cod_formatado[16]!=undefined)
+                {
+                    document.getElementById("cod").value=cod_formatado.slice(0,16)+"." + cod_formatado[16]
                 }
             }
         
+
         }       
